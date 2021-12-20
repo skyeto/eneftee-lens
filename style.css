@@ -1,0 +1,16 @@
+a.lens-nft-supporter {
+	color: orangered !important;
+}
+
+.lens-has-assigned-label * { color: inherit !important; }
+.pretty-link b, .pretty-link s {
+	color: inherit !important;
+}
+
+a.show-thread-link, a.ThreadedConversation-moreRepliesLink {
+	color: inherit !important;
+}
+.fullname,
+.stream-item a:hover .fullname,
+.stream-item a:active .fullname
+{color:inherit;}

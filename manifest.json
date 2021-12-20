@@ -1,0 +1,27 @@
+{
+	"name": "eneftee lens",
+	"action": {},
+	"manifest_version": 3,
+	"version": "0.1",
+	"description": "highlights NFT supporters on twitter",
+	"permissions": [
+		"storage",
+		"contextMenus"
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["data/nft-user.dat"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*.twitter.com/*"],
+			"js": ["content_script.js"],
+			"css": ["style.css"]
+		}
+	]
+}
